@@ -61,7 +61,7 @@ Seems like it works just fine.
 
 _This one was hard._
 
-It's some [old 4G router]() which just does its job. 
+It's some [old 4G router](https://www.tp-link.com/my/home-networking/mifi/tl-mr100/) which just does its job. 
 
 Someone in TpLink decided to make things complicated and encrypt communication between web interface and API.
 To communicate with a router you need to know password, request rsa keys, authorize and get jsession id, request token.
@@ -69,6 +69,7 @@ When you get those artifacts it's time to use them properly and reverse their AP
 Also, do not forget to log out and avoid doing something while having active session in a browser. 
 
 Kudos to [0xf15h](https://github.com/0xf15h) for implementing [crypto for this device](https://github.com/0xf15h/tp_link_gdpr/blob/main/tp_link_crypto.py) in python which is reused here.
+
 Kudos to [hertzg](https://github.com/hertzg) for his [implementation of API](https://github.com/hertzg/node-tplink-api) using Node.js.
 
 My implementation (``tplinksms.py``) does not cover proper payload formation and consists of intercepted messages from web-client.
